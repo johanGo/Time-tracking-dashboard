@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(226, 43%, 10%);
+  font-family: "Rubik", sans-serif;
+}
+
+.main-container {
+  width: 1114px;
+  height: 520px;
+  margin: 80px auto;
+  display: flex;
+  gap: 30px;
+}
+.main-container .first-section {
+  width: 255px;
+  height: 520px;
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 15px;
+}
+.main-container .first-section .user-section {
+  width: 100%;
+  height: 68%;
+  background-color: hsl(246, 80%, 60%);
+  border-radius: 15px;
+  padding: 34px 29px;
+}
+.main-container .first-section .user-section img {
+  width: 85px;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+.main-container .first-section .user-section .name-section {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.main-container .first-section .user-section .name-section .report {
+  font-size: 15px;
+  color: hsl(236, 100%, 87%);
+  font-weight: 400;
+}
+.main-container .first-section .user-section .name-section .name {
+  font-size: 40px;
+  color: white;
+  font-weight: 300;
+  line-height: 1.22em;
+}
+.main-container .first-section .days-section {
+  width: 100%;
+  height: 32%;
+  padding: 28px 34px;
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+.main-container .first-section .days-section p {
+  color: hsl(235, 45%, 61%);
+  font-size: 18px;
+  text-transform: capitalize;
+}
+.main-container .first-section .days-section p:hover {
+  color: white;
+}
+.main-container .first-section .days-section .active {
+  color: white;
+}
+.main-container .second-section {
+  width: 825px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.main-container .second-section .bg {
+  position: relative;
+  width: 255px;
+  height: 245px;
+  border: 1px solid;
+  border-radius: 14px;
+  z-index: -2;
+}
+.main-container .second-section .bg .icon {
+  position: absolute;
+  z-index: -1;
+  right: 20px;
+}
+.main-container .second-section .bg .information-section {
+  width: 100%;
+  height: 200px;
+  background-color: hsl(235, 46%, 20%);
+  margin-top: 43px;
+  border-radius: 13px;
+  padding: 30px 33px 33px 30px;
+}
+.main-container .second-section .bg .information-section .title-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-container .second-section .bg .information-section .title-section p {
+  text-transform: capitalize;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+}
+.main-container .second-section .bg .information-section .hours-section {
+  margin-top: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.main-container .second-section .bg .information-section .hours-section .hours {
+  font-size: 55px;
+  font-weight: 300;
+  color: white;
+}
+.main-container .second-section .bg .information-section .hours-section .description-hours {
+  color: hsl(235, 45%, 61%);
+}
+
+.attribution {
+  font-size: 17px;
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 1215px) {
+  .main-container {
+    width: 327px;
+    flex-direction: column;
+    height: auto;
+    gap: 24px;
+  }
+  .main-container .first-section {
+    width: 100%;
+    height: 203px;
+  }
+  .main-container .first-section .user-section {
+    height: 130px;
+    padding: 32px 38px 30px 27px;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+  }
+  .main-container .first-section .user-section img {
+    width: 70px;
+  }
+  .main-container .first-section .user-section .name-section {
+    margin-top: 0;
+  }
+  .main-container .first-section .user-section .name-section .name {
+    font-size: 23px;
+  }
+  .main-container .first-section .days-section {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 24px 34px;
+  }
+  .main-container .second-section {
+    width: 327px;
+    grid-template-columns: 1fr;
+    gap: 23px;
+  }
+  .main-container .second-section .bg {
+    width: 100%;
+    height: 160px;
+    background-position: 230px -9px;
+  }
+  .main-container .second-section .bg .information-section {
+    height: 120px;
+    margin-top: 38px;
+    padding: 27px 22px 32px 22px;
+  }
+  .main-container .second-section .bg .information-section .hours-section {
+    flex-direction: row;
+    margin-top: 7px;
+    align-items: center;
+    gap: 63px;
+  }
+  .main-container .second-section .bg .information-section .hours-section .hours {
+    font-size: 33px;
+  }
+  .attribution {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
